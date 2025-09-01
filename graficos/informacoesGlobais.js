@@ -7,7 +7,7 @@ async function visualizarInformacoesGlobais() {
     const dados = await resposta.json()
 
     const pessoasMundo = (dados.total_pessoas_mundo/1e9)
-    const trabalhadoresMundo = (dados.total_trabalho_mundo/1e9)
+    const trabalhadoresMundo = (dados.total_trabalhadores_mundo/1e9)
     const tempoDesTrabalho = parseInt (dados.tempo_medio_deslocamento_para_trabalho)
     const minutos = Math.round ((dados.tempo_medio_deslocamento_para_trabalho - tempoDesTrabalho) *60)
 
